@@ -1,108 +1,211 @@
-<div align="center">
-
 # 🎟️ Ticket Booking System
 
-### **Book Movies & Concerts in Seconds**
+> **Book Movies & Concerts in Seconds**
 
-A production-ready, full-stack **Ticket Booking Platform** inspired by **BookMyShow**, built with modern web technologies. Experience seamless event discovery, interactive seat booking, QR-based digital tickets, intelligent waitlist management, and role-based dashboards — all in one platform.
-
-<p align="center">
-  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white"/>
-  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/TailwindCSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Supabase-Backend-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
-</p>
-
-<p align="center">
-  <a href="YOUR_LIVE_URL">🌐 Live Demo</a> •
-  <a href="YOUR_GITHUB_URL">📂 Repository</a> •
-  <a href="#features">✨ Features</a> •
-  <a href="#installation">⚡ Installation</a>
-</p>
-
-</div>
+A modern, full-stack **Ticket Booking System** inspired by **BookMyShow**, built using **React, TypeScript, Tailwind CSS, shadcn/ui, Supabase, and PostgreSQL**. The platform provides a seamless booking experience with real-time seat selection, QR code ticket generation, waitlist management, role-based dashboards, and a responsive UI optimized for all devices.
 
 ---
 
-# 🚀 Overview
+## 🌐 Live Demo
 
-Ticket Booking System is a modern event booking platform designed for **Movies** and **Concerts**. It provides customers with an intuitive booking experience through a real-time interactive seat map while giving organizers and administrators complete control over events, venues, pricing, and analytics.
-
-The platform is built using a scalable architecture and production-ready coding standards, making it suitable for deployment and real-world usage.
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge&logo=vercel)](YOUR_DEPLOYMENT_LINK)
+[![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](YOUR_REPOSITORY_LINK)
 
 ---
 
-# ✨ Highlights
+# ✨ Features
 
-🎬 Movie & Concert Booking
+### 👥 Role Based Authentication
 
-🪑 Interactive Seat Map
+![Supabase](https://img.shields.io/badge/Admin-blue?style=for-the-badge)
+![Supabase](https://img.shields.io/badge/Organizer-green?style=for-the-badge)
+![Supabase](https://img.shields.io/badge/Customer-orange?style=for-the-badge)
 
-⚡ Real-Time Seat Availability
+✔ Login
 
-⏳ 10-Minute Seat Hold Timer
+✔ Register
 
-🎟 QR Code Digital Tickets
+✔ Email Verification
 
-📧 Email Notifications
+✔ Forgot Password
 
-👤 Role-Based Authentication
+✔ Protected Routes
 
-📊 Analytics Dashboard
+✔ Role Based Access
+
+---
+
+# 🎬 Customer Features
+
+🎟 Browse Movies
+
+🎭 Browse Concerts
+
+🔍 Smart Search & Filters
+
+🪑 Interactive Seat Selection
+
+⏳ 10-Minute Seat Hold
+
+🎫 QR Code Tickets
+
+📧 Email Confirmation
+
+📜 Booking History
+
+❌ Ticket Cancellation
+
+🔄 Rebooking
+
+📋 Waitlist
+
+👤 Profile Management
+
+🌙 Dark Mode
+
+---
+
+# 🏢 Organizer Features
+
+🎬 Create Events
+
+🏛 Manage Venues
+
+🖼 Upload Banner & Gallery
+
+💰 Ticket Pricing
+
+📊 Revenue Analytics
+
+👥 Customer Management
+
+📈 Booking Statistics
+
+---
+
+# 👑 Admin Features
+
+👥 User Management
+
+🎭 Organizer Approval
 
 🏛 Venue Management
 
-📋 Smart Waitlist System
+🎟 Seat Categories
 
-🌙 Dark Mode Support
+📈 Reports
 
-📱 Fully Responsive Design
+💰 Revenue Dashboard
 
----
+📊 Analytics
 
-# 🎯 User Roles
-
-## 👤 Customer
-
-- Register & Login
-- Browse Movies & Concerts
-- Search & Filter Events
-- Interactive Seat Booking
-- QR Ticket Generation
-- Booking History
-- Waitlist
-- Profile Management
-- Ticket Cancellation
+⚙ System Settings
 
 ---
 
-## 🏢 Organizer
+# 🚀 Core Functionalities
 
-- Create Events
-- Manage Events
-- Upload Posters
-- Configure Pricing
-- View Bookings
-- Revenue Dashboard
-- Analytics
-- Customer Insights
+✅ Real-Time Seat Availability
+
+✅ Interactive Seat Map
+
+✅ Seat Hold Timer
+
+✅ Automatic Seat Release
+
+✅ Concurrent Booking Protection
+
+✅ Duplicate Booking Prevention
+
+✅ QR Code Ticket Generation
+
+✅ Email Notifications
+
+✅ Waitlist Management
+
+✅ Automatic Seat Assignment
+
+✅ Booking History
+
+✅ Analytics Dashboard
 
 ---
 
-## 👑 Admin
+# 💻 Tech Stack
 
-- Manage Users
-- Approve Organizers
-- Manage Venues
-- Configure Seat Categories
-- Reports & Analytics
-- System Monitoring
-- Revenue Tracking
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss)
+![ShadcnUI](https://img.shields.io/badge/shadcn/ui-black?style=for-the-badge)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router)
+![React Query](https://img.shields.io/badge/React_Query-FF4154?style=for-the-badge&logo=react-query)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql)
+![Vercel](https://img.shields.io/badge/Vercel-black?style=for-the-badge&logo=vercel)
+![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)
 
 ---
 
-# 🎟 Booking Flow
+# 🖥 Dashboards
+
+### 👤 Customer Dashboard
+
+🏠 Dashboard
+
+🎟 Browse Events
+
+🎫 My Tickets
+
+📜 Booking History
+
+📋 Waitlist
+
+👤 Profile
+
+⚙ Settings
+
+---
+
+### 🏢 Organizer Dashboard
+
+📊 Dashboard
+
+➕ Create Event
+
+🎬 Manage Events
+
+🏛 Venues
+
+👥 Customers
+
+📈 Analytics
+
+💰 Revenue
+
+---
+
+### 👑 Admin Dashboard
+
+📊 Dashboard
+
+👥 Users
+
+🎭 Organizers
+
+🏛 Venues
+
+🎟 Seat Categories
+
+📈 Reports
+
+💰 Revenue
+
+⚙ Settings
+
+---
+
+# 🪑 Seat Booking Workflow
 
 ```text
 Browse Event
@@ -111,278 +214,222 @@ Browse Event
 Select Seats
       │
       ▼
-Hold Seats (10 Minutes)
+Seat Hold (10 Minutes)
       │
       ▼
 Review Booking
       │
       ▼
-Confirm Booking
+Payment
+      │
+      ▼
+Booking Confirmed
       │
       ▼
 Generate QR Ticket
       │
       ▼
-Send Email Confirmation
+Email Confirmation
 ```
 
 ---
 
-# 🔥 Core Features
-
-## 🎬 Event Management
-
-✔ Movies
-
-✔ Concerts
-
-✔ Venue Selection
-
-✔ Dynamic Pricing
-
-✔ Multiple Categories
-
-✔ Banner & Gallery
-
----
-
-## 🪑 Seat Management
-
-✔ Interactive Seat Grid
-
-✔ Premium / Gold / Silver / Standard / Economy
-
-✔ Zoom Support
-
-✔ Mobile Touch Support
-
-✔ Real-Time Updates
-
-✔ Seat Status Colors
-
----
-
-## ⏳ Smart Seat Hold
-
-- Automatic 10-minute reservation
-- Countdown timer
-- Auto-release after timeout
-- Prevents double booking
-
----
-
-## 📋 Intelligent Waitlist
-
-If seats are unavailable:
-
-✔ Join Waitlist
-
-✔ Automatic Seat Assignment
-
-✔ 15-Minute Offer Window
-
-✔ Auto Move to Next Customer
-
----
-
-## 🎫 QR Ticket
-
-Every booking includes:
-
-- Booking ID
-- QR Code
-- Customer Name
-- Event Details
-- Venue
-- Seat Numbers
-- Date & Time
-- Booking Status
-
----
-
-## 📧 Email Notifications
-
-- Booking Confirmation
-- Ticket Cancellation
-- Waitlist Invitation
-- Password Reset
-- Organizer Approval
-
----
-
-# 🛠 Tech Stack
-
-| Category | Technologies |
-|----------|--------------|
-| Frontend | React, TypeScript |
-| Styling | Tailwind CSS, shadcn/ui |
-| Routing | React Router |
-| State Management | React Query |
-| Backend | Supabase |
-| Database | PostgreSQL |
-| Authentication | Supabase Auth |
-| Deployment | Vercel |
-
----
-
-# 📁 Project Structure
+# 📋 Waitlist Flow
 
 ```text
-ticket-booking-system/
-
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── layouts/
-│   ├── hooks/
-│   ├── services/
-│   ├── contexts/
-│   ├── routes/
-│   ├── utils/
-│   ├── assets/
-│   └── types/
-│
-├── supabase/
-├── public/
-├── README.md
-└── package.json
+Event Sold Out
+      │
+      ▼
+Join Waitlist
+      │
+      ▼
+Booking Cancelled
+      │
+      ▼
+Seat Offered
+      │
+      ▼
+15 Minute Timer
+      │
+      ▼
+Booked ✔
+or
+Next Customer
 ```
 
 ---
 
 # 🗄 Database
 
-The project uses PostgreSQL via Supabase.
+✔ Profiles
 
-### Main Tables
+✔ Venues
 
-- profiles
-- venues
-- events
-- seats
-- bookings
-- booking_seats
-- payments
-- waitlist
-- notifications
-- analytics
+✔ Events
 
----
+✔ Seat Categories
 
-# 🔒 Security
+✔ Seats
 
-✔ JWT Authentication
+✔ Bookings
 
-✔ Row Level Security
+✔ Booking Seats
 
-✔ Role-Based Authorization
+✔ Payments
 
-✔ Secure APIs
+✔ Waitlist
 
-✔ Input Validation
+✔ Notifications
 
-✔ SQL Injection Protection
-
-✔ XSS Protection
-
-✔ CSRF Protection
-
-✔ Rate Limiting
+✔ Analytics
 
 ---
 
-# 📊 Dashboard Modules
+# 🔐 Security
 
-### Customer Dashboard
+🔒 Supabase Authentication
 
-- Dashboard
-- My Tickets
-- Booking History
-- Waitlist
-- Profile
+🔒 Row Level Security (RLS)
 
----
+🔒 SQL Injection Protection
 
-### Organizer Dashboard
+🔒 XSS Protection
 
-- Create Events
-- Bookings
-- Revenue
-- Analytics
-- Customers
+🔒 CSRF Protection
+
+🔒 Input Validation
+
+🔒 Secure APIs
+
+🔒 Role-Based Authorization
 
 ---
 
-### Admin Dashboard
+# 🎨 UI Highlights
 
-- Users
-- Organizers
-- Venues
-- Reports
-- Analytics
+✨ Glassmorphism
+
+✨ Gradient Buttons
+
+✨ Smooth Animations
+
+✨ Skeleton Loading
+
+✨ Responsive Design
+
+✨ Dark Mode
+
+✨ Beautiful Dashboards
+
+✨ Interactive Seat Map
 
 ---
 
-# 📸 Preview
+# 📊 Project Statistics
 
-| Landing Page | Dashboard |
-|--------------|-----------|
-| Add Screenshot | Add Screenshot |
+| Feature | Status |
+|----------|--------|
+| Authentication | ✅ |
+| Seat Booking | ✅ |
+| QR Ticket | ✅ |
+| Waitlist | ✅ |
+| Email Notification | ✅ |
+| Analytics | ✅ |
+| Responsive UI | ✅ |
+| Dark Mode | ✅ |
 
-| Seat Booking | QR Ticket |
-|--------------|-----------|
-| Add Screenshot | Add Screenshot |
+---
+
+# 📸 Screenshots
+
+🖼 Landing Page
+
+🖼 Customer Dashboard
+
+🖼 Organizer Dashboard
+
+🖼 Admin Dashboard
+
+🖼 Seat Booking
+
+🖼 QR Ticket
+
+🖼 Booking Confirmation
 
 ---
 
 # 🚀 Deployment
 
-| Service | Platform |
-|----------|----------|
-| Frontend | Vercel |
-| Backend | Supabase |
-| Database | PostgreSQL |
+Frontend
+
+✔ Vercel
+
+Backend
+
+✔ Supabase
 
 ---
 
-# 🌟 Future Scope
+# 📈 Future Enhancements
 
-- Online Payments
-- Mobile Application
-- Push Notifications
-- AI Event Recommendations
-- Loyalty Rewards
-- Multi-Language Support
-- Event Reviews
+⭐ Razorpay / Stripe Integration
 
----
+⭐ AI Event Recommendation
 
-# 🤝 Contributing
+⭐ Push Notifications
 
-Contributions are always welcome.
+⭐ Mobile App
 
-1. Fork Repository
+⭐ Loyalty Rewards
 
-2. Create Feature Branch
+⭐ Multi-language Support
 
-3. Commit Changes
+⭐ Event Reviews
 
-4. Push Branch
-
-5. Open Pull Request
+⭐ Social Login
 
 ---
 
 # 📄 License
 
-This project is developed for educational and internship assignment purposes.
+This project was developed for educational and internship assignment purposes.
+
+---
+
+## ⭐ Project Stats
+
+![GitHub Repo stars](https://img.shields.io/github/stars/YOUR_USERNAME/ticket-booking-system?style=for-the-badge)
+
+![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/ticket-booking-system?style=for-the-badge)
+
+![GitHub issues](https://img.shields.io/github/issues/YOUR_USERNAME/ticket-booking-system?style=for-the-badge)
+
+![GitHub last commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/ticket-booking-system?style=for-the-badge)
+
+---
+
+# 💙 Built With
+
+❤️ React
+
+❤️ TypeScript
+
+❤️ Tailwind CSS
+
+❤️ shadcn/ui
+
+❤️ Supabase
+
+❤️ PostgreSQL
+
+❤️ Vercel
 
 ---
 
 <div align="center">
 
-## ⭐ Star this repository if you found it useful!
+## ⭐ If you found this project useful, don't forget to Star the repository!
 
-Made with ❤️ using **React**, **TypeScript**, **Tailwind CSS**, **Supabase**, and **PostgreSQL**
+### Made with ❤️ by **Jigyasa Awasthi**
 
 </div>
