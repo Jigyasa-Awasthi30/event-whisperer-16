@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as MoviesRouteImport } from './routes/movies'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ConcertsRouteImport } from './routes/concerts'
@@ -31,6 +32,11 @@ import { Route as AuthenticatedAdminVenuesRouteImport } from './routes/_authenti
 import { Route as AuthenticatedAdminUsersRouteImport } from './routes/_authenticated/admin.users'
 import { Route as AuthenticatedAdminOrganizersRouteImport } from './routes/_authenticated/admin.organizers'
 
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const MoviesRoute = MoviesRouteImport.update({
   id: '/movies',
   path: '/movies',
@@ -152,6 +158,7 @@ export interface FileRoutesByFullPath {
   '/concerts': typeof ConcertsRoute
   '/contact': typeof ContactRoute
   '/movies': typeof MoviesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/admin': typeof AuthenticatedAdminRouteWithChildren
   '/dashboard': typeof AuthenticatedDashboardRouteWithChildren
   '/organizer': typeof AuthenticatedOrganizerRouteWithChildren
@@ -174,6 +181,7 @@ export interface FileRoutesByTo {
   '/concerts': typeof ConcertsRoute
   '/contact': typeof ContactRoute
   '/movies': typeof MoviesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/admin': typeof AuthenticatedAdminRouteWithChildren
   '/dashboard': typeof AuthenticatedDashboardRouteWithChildren
   '/organizer': typeof AuthenticatedOrganizerRouteWithChildren
@@ -198,6 +206,7 @@ export interface FileRoutesById {
   '/concerts': typeof ConcertsRoute
   '/contact': typeof ContactRoute
   '/movies': typeof MoviesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/_authenticated/admin': typeof AuthenticatedAdminRouteWithChildren
   '/_authenticated/dashboard': typeof AuthenticatedDashboardRouteWithChildren
   '/_authenticated/organizer': typeof AuthenticatedOrganizerRouteWithChildren
@@ -222,6 +231,7 @@ export interface FileRouteTypes {
     | '/concerts'
     | '/contact'
     | '/movies'
+    | '/sitemap.xml'
     | '/admin'
     | '/dashboard'
     | '/organizer'
@@ -244,6 +254,7 @@ export interface FileRouteTypes {
     | '/concerts'
     | '/contact'
     | '/movies'
+    | '/sitemap.xml'
     | '/admin'
     | '/dashboard'
     | '/organizer'
@@ -267,6 +278,7 @@ export interface FileRouteTypes {
     | '/concerts'
     | '/contact'
     | '/movies'
+    | '/sitemap.xml'
     | '/_authenticated/admin'
     | '/_authenticated/dashboard'
     | '/_authenticated/organizer'
@@ -291,11 +303,19 @@ export interface RootRouteChildren {
   ConcertsRoute: typeof ConcertsRoute
   ContactRoute: typeof ContactRoute
   MoviesRoute: typeof MoviesRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   EventsEventIdRoute: typeof EventsEventIdRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/movies': {
       id: '/movies'
       path: '/movies'
@@ -522,6 +542,7 @@ const rootRouteChildren: RootRouteChildren = {
   ConcertsRoute: ConcertsRoute,
   ContactRoute: ContactRoute,
   MoviesRoute: MoviesRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   EventsEventIdRoute: EventsEventIdRoute,
 }
 export const routeTree = rootRouteImport
