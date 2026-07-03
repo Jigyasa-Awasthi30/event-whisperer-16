@@ -59,7 +59,7 @@ export function EventEditor() {
         seat_number: i + 1,
         price: form.base_price,
         category_id: catId ?? null,
-        status: "available",
+        status: "available" as const,
       })));
       if (seats.length) {
         const { error: sErr } = await supabase.from("seats").insert(seats);
